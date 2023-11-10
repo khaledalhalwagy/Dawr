@@ -27,7 +27,7 @@ body {
 }
 
 .nav-link {
-    padding: 5px; /* Adjust padding to make nav links smaller */
+    padding: 2px; /* Adjust padding to make nav links smaller */
     background-color: #3b8dbe;
     color: white;
     text-decoration: none;

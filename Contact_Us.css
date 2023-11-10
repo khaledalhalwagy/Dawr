@@ -100,10 +100,14 @@ p {
     border-radius: 5px;
     padding: 10px;
     margin-bottom: 20px;
-    width: 80%;
-    max-width: 300px;
-    margin-right: auto;
-    margin-left: auto;
+}
+
+.small-box {
+    width: 100px;
+}
+
+.large-box {
+    height: 200px;
 }
 
 input, textarea {

@@ -16,7 +16,7 @@ body {
 }
 
 .logo img {
-     max-width: 80px; /* Adjust the max-width value as needed */
+     max-width: 100px; /* Adjust the max-width value as needed */
     height: auto;
 }
 
@@ -24,10 +24,11 @@ body {
     display: flex;
     gap: 10px;
     margin-left: auto;
+    padding: 10px;
 }
 
 .nav-link {
-    padding: 5px;
+    padding: 10px;
     background-color: #3b8dbe;
     color: white;
     text-decoration: none;

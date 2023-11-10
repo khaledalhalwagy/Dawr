@@ -7,7 +7,7 @@ body {
 
 .header {
     color: white;
-    padding: 20px;
+    padding: 10px; /* Smaller padding for PCs */
     position: fixed;
     top: 0;
     width: 100%;
@@ -18,18 +18,18 @@ body {
 }
 
 .logo img {
-    max-width: 100%; /* Make the logo responsive */
+    max-width: 80px; /* Adjust the maximum width of the logo */
     height: auto;
 }
 
 .nav-links {
     display: flex;
-    gap: 10px;
-    margin-right: 20px; /* Adjust the margin as needed */
+    gap: 5px; /* Adjust the gap between nav links for PCs */
+    margin-right: 10px; /* Adjust the margin as needed */
 }
 
 .nav-link {
-    padding: 10px;
+    padding: 5px; /* Smaller padding for PCs */
     background-color: #3b8dbe;
     color: white;
     text-decoration: none;
@@ -86,9 +86,21 @@ p {
 
 /* Additional adjustments for small screens */
 @media only screen and (max-width: 768px) {
+    .header {
+        padding: 15px; /* Larger padding for small screens */
+    }
+
+    .logo img {
+        max-width: 60px; /* Adjust the maximum width of the logo for small screens */
+    }
+
     .nav-links {
-        margin-left: 0; /* Reset margin for small screens */
-        justify-content: flex-end; /* Align nav links to the right */
+        gap: 10px; /* Adjust the gap between nav links for small screens */
+        margin-right: 20px; /* Adjust the margin as needed for small screens */
+    }
+
+    .nav-link {
+        padding: 10px; /* Adjust padding for small screens */
     }
 
     .info-item {
@@ -125,7 +137,7 @@ p {
 }
 
 input, textarea {
-    width: 100%;
+    width: calc(100% - 20px); /* Adjust the width for small screens */
     padding: 10px;
     margin-top: 10px;
     border: 1px solid #ccc;

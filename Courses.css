@@ -1,7 +1,11 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
 .header {
-    background-color: #fff;
     color: white;
-    padding: 20px;
+    padding: 15px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -12,14 +16,14 @@
 }
 
 .logo img {
-    width: 220px;
+    max-width: 100%; /* Make the logo responsive */
     height: auto;
 }
 
 .nav-links {
     display: flex;
     gap: 10px;
-    margin-right: 20px; /* Adjust the margin as needed */
+    margin-right: 20px;
 }
 
 .nav-link {
@@ -34,39 +38,162 @@
     background-color: #4fa7e2;
 }
 
-.h1{
+/* Adjustments for larger screens */
+@media only screen and (min-width: 769px) {
+    .header {
+        padding: 20px;
+    }
+
+    .logo img {
+        max-width: 120px; /* Adjust logo size on larger screens */
+    }
+
+    .nav-link {
+        font-size: 16px; /* Adjust font size for larger screens */
+    }
+}
+
+/* Adjustments for smaller screens */
+@media only screen and (max-width: 768px) {
+    .header {
+        padding: 10px;
+    }
+
+    .logo img {
+        max-width: 80px;
+    }
+
+    .nav-links {
+        gap: 5px;
+        margin-right: 10px;
+    }
+
+    .nav-link {
+        padding: 5px;
+        font-size: 12px; /* Adjust font size for smaller screens */
+    }
+}
+
+/* First section styling */
+.first-section {
+    position: relative;
     text-align: center;
 }
 
-.h2{
-    text-align: center;
+.background {
+    background-color: #fdf8f4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 
+h1 {
+    color: #1c698d;
+    margin-bottom: 10px;
+}
 
+p {
+    color: #e09176;
+    margin-bottom: 30px;
+}
 
+.contact-info {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
 
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
 
+.info-item i {
+    margin-right: 10px;
+    font-size: 20px;
+}
 
+/* Additional adjustments for small screens */
+@media only screen and (max-width: 768px) {
+    .info-item {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
 
+    .info-item i {
+        margin-right: 5px;
+    }
+}
 
+.contact-boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
+.box {
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.small-box {
+    width: 100px;
+}
+
+.large-box {
+    height: 200px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.send-button {
+    background-color: #FFA500;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    position: absolute;
+    bottom: 0;
+}
+
+.send-button:hover {
+    background-color: #FFD700;
+}
+
+/* Third background styling */
 .third-background {
-    background-color: white; /* Set the background color to white */
+    background-color: white;
     text-align: center;
     padding: 20px;
-    color: #1c688c; /* Text color for the contact info */
+    color: #1c688c;
 }
 
 .third-background h1 {
     color: #1c688c;
     text-align: left;
-    font-size: 45px; /* Font size for h1 */
+    font-size: 45px;
     margin: 20px 0;
 }
 
 .third-background h2 {
     color: #1c688c;
     text-align: left;
-    font-size: 20px; /* Font size for h1 */
+    font-size: 20px;
     margin: 20px 0;
 }

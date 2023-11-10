@@ -16,7 +16,7 @@ body {
 }
 
 .logo img {
-     max-width: 15%; /* Adjust the max-width value as needed */
+     max-width: 15vw; /* Adjust the max-width value as needed */
     height: auto;
 }
 

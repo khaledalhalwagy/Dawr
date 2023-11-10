@@ -16,7 +16,7 @@ body {
 }
 
 .logo img {
-    max-width: 100%; /* Make the logo responsive */
+    max-width: 50%; /* Make the logo responsive */
     height: auto;
 }
 

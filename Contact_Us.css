@@ -22,7 +22,7 @@ body {
 
 .nav-links {
     display: flex;
-    gap: 5px; /* Adjust the gap to make nav links smaller */
+    gap: 2px; /* Adjust the gap to make nav links smaller */
     margin-right: 20px;
 }
 

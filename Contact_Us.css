@@ -1,5 +1,11 @@
+/* Complete CSS code with modifications */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
 .header {
-    background-color: #fff;
     color: white;
     padding: 20px;
     position: fixed;
@@ -11,25 +17,9 @@
     align-items: center;
 }
 
-
-To address the issues you've mentioned, we can make the logo smaller when there's limited space and fix the alignment of the Google Maps icon and text in the Contact Us section. Here are the modified styles:
-
-
-/* Add these styles to your existing CSS */
-
-/* Responsive logo size */
 .logo img {
     max-width: 100%; /* Make the logo responsive */
     height: auto;
-}
-
-
-/* Responsive navigation links alignment */
-@media only screen and (max-width: 768px) {
-    .nav-links {
-        margin-left: 0; /* Reset margin for small screens */
-        justify-content: flex-end; /* Align nav links to the right */
-    }
 }
 
 .nav-links {
@@ -79,6 +69,7 @@ p {
 .contact-info {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
     margin-bottom: 20px;
 }
 
@@ -95,6 +86,11 @@ p {
 
 /* Additional adjustments for small screens */
 @media only screen and (max-width: 768px) {
+    .nav-links {
+        margin-left: 0; /* Reset margin for small screens */
+        justify-content: flex-end; /* Align nav links to the right */
+    }
+
     .info-item {
         margin-right: 0;
         margin-bottom: 10px; /* Add some space between info items */

@@ -16,8 +16,8 @@ body {
 }
 
 .logo img {
-    max-width: 100%; /* Make the logo responsive */
-    height: 10px;
+    max-width: auto; /* Make the logo responsive */
+    height: auto;
 }
 
 .nav-links {

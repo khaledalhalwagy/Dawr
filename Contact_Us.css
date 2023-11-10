@@ -5,10 +5,10 @@ body {
 
 .header {
     color: white;
-    padding: 1px;
+    padding: 10px; /* Adjust padding for smaller header */
     position: fixed;
     top: 0;
-    width: 50%;
+    width: 100%;
     z-index: 1000;
     display: flex;
     justify-content: space-between;
@@ -16,22 +16,22 @@ body {
 }
 
 .logo img {
-    max-width: 40%; /* Make the logo responsive */
-    height: 40%;
+    max-width: 100%; /* Make the logo responsive */
+    height: auto;
 }
 
 .nav-links {
     display: flex;
-    gap: 2px; /* Adjust the gap to make nav links smaller */
+    gap: 5px; /* Adjust the gap to make nav links smaller */
     margin-right: 20px;
 }
 
 .nav-link {
-    padding: 2px; /* Adjust padding to make nav links smaller */
+    padding: 5px; /* Adjust padding to make nav links smaller */
     background-color: #3b8dbe;
     color: white;
     text-decoration: none;
-    border-radius: 2px;
+    border-radius: 5px;
 }
 
 .nav-link:hover {

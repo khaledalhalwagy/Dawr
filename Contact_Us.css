@@ -14,16 +14,15 @@
 
 To address the issues you've mentioned, we can make the logo smaller when there's limited space and fix the alignment of the Google Maps icon and text in the Contact Us section. Here are the modified styles:
 
-css
-Copy code
+
 /* Add these styles to your existing CSS */
 
 /* Responsive logo size */
 .logo img {
-    width: auto;
-    max-width: 220px; /* Set a maximum width for the logo */
+    max-width: 100%; /* Make the logo responsive */
     height: auto;
 }
+
 
 /* Responsive navigation links alignment */
 @media only screen and (max-width: 768px) {
@@ -83,7 +82,6 @@ p {
     margin-bottom: 20px;
 }
 
-/* Fix Google Maps icon and text alignment */
 .info-item {
     display: flex;
     align-items: center;
@@ -93,7 +91,6 @@ p {
 .info-item i {
     margin-right: 10px;
     font-size: 20px;
-    line-height: 1; /* Ensure proper alignment */
 }
 
 /* Additional adjustments for small screens */

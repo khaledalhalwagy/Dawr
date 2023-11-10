@@ -50,7 +50,7 @@
         <div class="contact-boxes">
             <div class="box small-box">
                 <p>Name</p>
-                <input type="text" id="contactName" placeholder="Enter your name">
+                <input type="text"  id="contactName" placeholder="Enter your name">
             </div>
             <div class="box small-box">
                 <p>Email</p>
@@ -72,9 +72,13 @@
 
     <script>
         function submitContactForm() {
+            // Clear the input fields
             document.getElementById('contactName').value = '';
             document.getElementById('contactEmail').value = '';
             document.getElementById('contactMessage').value = '';
+    
+            // You can add additional logic for form submission here if needed
+            // For now, let's just log a message to the console
             console.log('Form submitted on Contact Us page');
         }
     </script>

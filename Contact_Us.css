@@ -5,7 +5,7 @@ body {
 
 .header {
     color: white;
-    padding: 10px; /* Adjust padding for smaller header */
+    padding: 10px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -16,21 +16,20 @@ body {
 }
 
 .logo img {
-    max-width: 100%; /* Make the logo responsive */
+    max-width: 100%;
     height: auto;
 }
 
 .nav-links {
     display: flex;
     gap: 10px;
-    margin-left: auto; /* Push nav links to the right */
+    margin-left: auto;
 }
 
 .nav-link {
-    padding: 5px; /* Adjust padding to make nav links smaller */
+    padding: 5px;
     background-color: #3b8dbe;
     color: white;
-    display = flex;
     text-decoration: none;
 }
 
@@ -109,7 +108,7 @@ p {
 }
 
 .small-box {
-    width: 100px;
+    width: 100%;
 }
 
 .large-box {

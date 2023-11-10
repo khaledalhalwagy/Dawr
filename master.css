@@ -12,7 +12,8 @@
 }
 
 .logo img {
-    width: 220px;
+    width: auto;
+    max-width: 220px; /* Set a maximum width for the logo */
     height: auto;
 }
 

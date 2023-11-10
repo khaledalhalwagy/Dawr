@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <script src="https://kit.fontawesome.com/9d66fcd626.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="Contact_Us.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            color: white;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            margin-right: 10px; /* Adjust the margin as needed */
+              }
+
+        .nav-links {
+            display: flex;
+            gap: 10px;
+        }
+
+        .nav-link {
+            padding: 10px;
+            background-color: #3b8dbe; /* Light blue */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .nav-link:hover {
+            background-color: #4fa7e2; /* Lighter blue on hover */
+        }
+    </style>
+
+</head>
+<body>
+    
+    <!--The fixed (sticky) header-->
+    <div class="header">
+        <div class="logo">
+            <img src="5.PNG" alٍt="Your Logo">
+        </div>
+        <nav class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="Islam_Courses.html" class="nav-link">Islam Courses</a>
+            <a href="Courses.html" class="nav-link">Courses</a>
+            <a href="Courses_from_students.html" class="nav-link">Courses From Students</a>
+            <a href="Contact_Us.html" class="nav-link">Contact Us</a>
+        </nav>
+        <!-- Add your logo and navigation links here -->
+    </div>
+    <!--The fixed (sticky) header-->
+
+
+    <div class="first-section">
+        <div class="first-section">
+            <div class="background"></div>
+            <br><br><br><br><br><br><br><br><br>
+            <h1>تواصل معنا</h1>
+            <p>إذا كنت مختص تريد نشر المعرفة وعمل دورة على دَوْر</p>
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>مصر-الإسكندرية-مدينة ظباط أبوقير-مدرسى الشهيد حسين طه</p>
+                </div>
+                <div class="info-item">
+                    <i class="far fa-clock"></i>
+                    <p>الثامنة صباحا الى الواحدة مساء</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>01123654785</p>
+                </div>
+                <div class="info-item">
+                    <i class="far fa-envelope"></i>
+                    <p>info@company.com</p>
+                </div>
+            </div>
+            <div class="contact-boxes">
+                <div class="box small-box">
+                    <p>Name</p>
+                    <input type="text"  id="contactName" placeholder="Enter your name">
+                </div>
+                <div class="box small-box">
+                    <p>Email</p>
+                    <input type="text" id="contactEmail" placeholder="Enter your email">
+                </div>
+                <div class="box large-box">
+                    <p>Message</p>
+                    <textarea id="contactMessage" placeholder="Enter your message"></textarea>
+                    
+                </div>
+                <br>
+                <button class="send-button" type="button" onclick="submitContactForm()">Send</button>
+            </div>
+        </div>
+
+    <div class="third-background">
+        <h1><strong>Call</strong> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <strong>Email</strong> <br></h1>
+        <h2>0101112254  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  info@company.com</h2>
+    </div>
+    <script>
+        function submitContactForm() {
+            // Clear the input fields
+            document.getElementById('contactName').value = '';
+            document.getElementById('contactEmail').value = '';
+            document.getElementById('contactMessage').value = '';
+    
+            // You can add additional logic for form submission here if needed
+            // For now, let's just log a message to the console
+            console.log('Form submitted on Contact Us page');
+        }
+    </script>
+</body>
+</html>

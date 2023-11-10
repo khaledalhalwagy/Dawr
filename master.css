@@ -1,0 +1,155 @@
+.header {
+    background-color: #fff;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 220px;
+    height: auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 10px;
+    margin-right: 20px; /* Adjust the margin as needed */
+}
+
+.nav-link {
+    padding: 10px;
+    background-color: #3b8dbe;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.nav-link:hover {
+    background-color: #4fa7e2;
+}
+
+.background-section {
+    background-image: url('download3.PNG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    text-align: center; /* Center the text horizontally */
+    padding: 20px; /* Add padding to create space between the text and the edges */
+}
+
+.background-section::before {
+    content: "";
+    background-image: url('download(3).PNG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    filter: blur(4px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.background-section h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 45px; /* Font size for h1 */
+    margin: 20px 0;
+}
+
+.background-section h2 {
+    color: white;
+    font-weight: bold;
+    font-size: 30px; /* Font size for h2 */
+    margin: 20px 0;
+}
+
+.contact-form input {
+    background-color: #007BFF; /* Change to your preferred color */
+    color: rgb(0, 0, 0); /* Text color */
+    border: 10px solid #007BFF; /* Border color */
+    padding: 10px; /* Adjust padding as needed */
+    font-size: 25px; /* Adjust the font size */
+    margin: 5px; /* Adjust margins as needed */
+}
+.contact-form button {
+    background-color: #007BFF; /* Change to your preferred color */
+    color: rgb(255, 255, 255); /* Text color */
+    border: 10px solid #007BFF; /* Border color */
+    padding: 10px; /* Adjust padding as needed */
+    font-size: 25px; /* Adjust the font size */
+    margin: 5px; /* Adjust margins as needed */
+}
+
+.contact-form button:hover {
+    background-color: #ffb700; /* Change to a different color on hover */
+}
+
+.contact-form input {
+    border: 1px solid #ddd; /* Border for input fields */
+    background-color: #f5f5f5; /* Background color for input fields */
+}
+
+.contact-form button {
+    border: none; /* Remove the button border */
+    background-color: rgb(189, 111, 2);
+}
+
+.contact-form input, .contact-form button {
+    font-family: Arial, sans-serif; /* Specify your preferred font */
+    text-align: left; /* Center text in the input and button */
+}
+
+.second-background {
+    background-image: url('images.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 30vh; /* Adjust the height as needed */
+    text-align: center;
+    padding: 20px; /* Add padding to create space between the text and the edges */
+    color: #1c688c;
+}
+
+.second-background h1 {
+    color: white;
+    font-size: 45px; /* Font size for h1 */
+    margin: 20px 0;
+}
+.second-background h2 {
+    color: white;
+    font-size: 20px; /* Font size for h1 */
+    margin: 20px 0;
+}
+.third-background {
+    background-color: white; /* Set the background color to white */
+    text-align: center;
+    padding: 20px;
+    color: #1c688c; /* Text color for the contact info */
+}
+
+.third-background h1 {
+    color: #1c688c;
+    text-align: left;
+    font-size: 45px; /* Font size for h1 */
+    margin: 20px 0;
+}
+
+.third-background h2 {
+    color: #1c688c;
+    text-align: left;
+    font-size: 20px; /* Font size for h1 */
+    margin: 20px 0;
+}

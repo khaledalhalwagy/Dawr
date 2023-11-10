@@ -17,7 +17,7 @@ body {
 
 .logo img {
      max-width: 100%; /* Adjust the max-width value as needed */
-    height: auto;
+    height: 15%;
 }
 
 .nav-links {

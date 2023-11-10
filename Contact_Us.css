@@ -1,5 +1,3 @@
-/* Complete CSS code with modifications */
-
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -7,7 +5,7 @@ body {
 
 .header {
     color: white;
-    padding: 15px; /* Adjust padding for larger screens */
+    padding: 15px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -18,18 +16,18 @@ body {
 }
 
 .logo img {
-    max-width: 100px; /* Adjust the maximum width of the logo for larger screens */
+    max-width: 100px;
     height: auto;
 }
 
 .nav-links {
     display: flex;
-    gap: 10px; /* Adjust the gap between nav links for larger screens */
-    margin-right: 20px; /* Adjust the margin as needed */
+    gap: 10px;
+    margin-right: 20px;
 }
 
 .nav-link {
-    padding: 10px; /* Adjust padding for larger screens */
+    padding: 10px;
     background-color: #3b8dbe;
     color: white;
     text-decoration: none;
@@ -38,6 +36,34 @@ body {
 
 .nav-link:hover {
     background-color: #4fa7e2;
+}
+
+/* Adjustments for larger screens */
+@media only screen and (min-width: 769px) {
+    .header {
+        padding: 20px;
+    }
+}
+
+/* Adjustments for smaller screens */
+@media only screen and (max-width: 768px) {
+    .header {
+        padding: 10px;
+    }
+
+    .logo img {
+        max-width: 80px;
+    }
+
+    .nav-links {
+        gap: 5px;
+        margin-right: 10px;
+    }
+
+    .nav-link {
+        padding: 5px;
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
 }
 
 /* First section styling */
@@ -69,7 +95,6 @@ p {
 .contact-info {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
     margin-bottom: 20px;
 }
 
@@ -86,23 +111,6 @@ p {
 
 /* Additional adjustments for small screens */
 @media only screen and (max-width: 768px) {
-    .header {
-        padding: 10px; /* Smaller padding for small screens */
-    }
-
-    .logo img {
-        max-width: 80px; /* Adjust the maximum width of the logo for small screens */
-    }
-
-    .nav-links {
-        gap: 5px; /* Adjust the gap between nav links for small screens */
-        margin-right: 10px; /* Adjust the margin as needed for small screens */
-    }
-
-    .nav-link {
-        padding: 5px; /* Adjust padding for small screens */
-    }
-
     .info-item {
         margin-right: 0;
         margin-bottom: 10px; /* Add some space between info items */
@@ -137,7 +145,7 @@ p {
 }
 
 input, textarea {
-    width: calc(100% - 20px); /* Adjust the width for small screens */
+    width: 100%;
     padding: 10px;
     margin-top: 10px;
     border: 1px solid #ccc;
@@ -152,8 +160,8 @@ input, textarea {
     border-radius: 5px;
     cursor: pointer;
     margin-top: 10px;
-    position: absolute; /* Make the position absolute */
-    bottom: 0; /* Align the button to the bottom of the container */
+    position: absolute;
+    bottom: 0;
 }
 
 .send-button:hover {

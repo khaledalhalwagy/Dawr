@@ -6,6 +6,7 @@
     <title>Home</title>
     <link rel="stylesheet" type="text/css" href="master.css">
     <link rel="icon" href="6.ico" type="image/x-icon">
+
     <style>
         body {
             margin: 0;
@@ -25,11 +26,12 @@
         
         .logo {
             margin-right: 10px; /* Adjust the margin as needed */
-              }
+        }
 
         .nav-links {
             display: flex;
             gap: 10px;
+            margin-left: auto; /* Push nav links to the right */
         }
 
         .nav-link {
@@ -43,12 +45,66 @@
         .nav-link:hover {
             background-color: #4fa7e2; /* Lighter blue on hover */
         }
-    </style>
 
+        .background-section {
+            background-image: url('download3.PNG');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box; /* Include padding in the element's total width and height */
+            display: flex;
+            flex-direction: column; /* Stack child elements vertically */
+            justify-content: center; /* Center the content vertically */
+            align-items: center; /* Center the content horizontally */
+        }
+
+        .background-section h1 {
+            color: white;
+            font-weight: bold;
+            font-size: 3em;
+            margin: 20px 0;
+        }
+
+        .background-section h2 {
+            color: white;
+            font-weight: bold;
+            font-size: 2em;
+            margin: 20px 0;
+        }
+
+        .contact-form {
+            max-width: 400px; /* Adjust the maximum width as needed */
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .contact-form input,
+        .contact-form button {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .second-background,
+        .third-background {
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+            color: #1c688c;
+        }
+
+        .second-background h1,
+        .third-background h1,
+        .second-background h2,
+        .third-background h2 {
+            margin: 20px 0;
+        }
+    </style>
 </head>
 <body>
-
-
 
     <!--The fixed (sticky) header-->
     <div class="header">
@@ -62,49 +118,32 @@
             <a href="Courses_from_students.html" class="nav-link">Courses From Students</a>
             <a href="Contact_Us.html" class="nav-link">Contact Us</a>
         </nav>
-        <!-- Add your logo and navigation links here -->
-        
     </div>
     <!--The fixed (sticky) header-->
-
 
     <!--home-section-->
     <div class="background-section">
         <!-- Your content goes here -->
-        <br><br><br><br><br><br><br><br><br>
         <h1>دورات على الانترنت وشخصيا<sub>انشر العلم </sub></h1>
         <h2>ادخل بياناتك</h2>
-        <br>
         <form class="contact-form" onsubmit="return submitHomeForm();">
-           
             <input type="text" id="name" name="name" placeholder="Name" required>
-            
-            <br>
             <input type="email" id="email" name="email" placeholder="Email" required>
-            <br>
             <button type="submit">Submit</button>
         </form>
     </div>
+
     <div class="second-background">
         <!-- Your content for the second background image -->
         <h1>ما هو دَوْر؟</h1>
-        <br>
         <h2>دور هو موقع لعرض أحدث الدورات في الإدارات المختلفة بمحافظة الإسكندرية 
         وأيضا لنشر دورات من الأزهر الشريف لتوسيع المعرفة الإسلامية لدى طلبة المدارس</h2>
     </div>
+
     <div class="third-background">
-        <h1><strong>Call</strong> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <strong>Email</strong> <br></h1>
-        <h2>0101112254  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  info@company.com</h2>
+        <h1>Call:0101112254</h1>
+        <h2>Email: info@company.com</h2>
     </div>
-    <!--home section-->
-
-
-
-
-
-
-
-
 
     <script>
         function submitHomeForm() {

@@ -71,24 +71,19 @@ p {
 
 .info-item {
     display: flex;
-    align-items: left;
-    margin-right: 20px;
+    flex-direction: column;
+    align-items: center;
 }
 
 .info-item i {
-    margin-right: 10px;
+    margin-bottom: 10px;
     font-size: 20px;
 }
 
 /* Additional adjustments for small screens */
 @media only screen and (max-width: 768px) {
     .info-item {
-        margin-right: 0;
         margin-bottom: 10px;
-    }
-
-    .info-item i {
-        margin-right: 5px;
     }
 }
 
@@ -107,7 +102,7 @@ p {
     margin-bottom: 20px;
 }
 
-.small-box {
+.small-box, .large-box {
     width: 100%;
 }
 

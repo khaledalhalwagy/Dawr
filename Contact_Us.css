@@ -16,18 +16,18 @@ body {
 }
 
 .logo img {
-    max-width: 100px;
+    max-width: 100%; /* Make the logo responsive */
     height: auto;
 }
 
 .nav-links {
     display: flex;
-    gap: 10px;
+    gap: 5px; /* Adjust the gap to make nav links smaller */
     margin-right: 20px;
 }
 
 .nav-link {
-    padding: 10px;
+    padding: 5px; /* Adjust padding to make nav links smaller */
     background-color: #3b8dbe;
     color: white;
     text-decoration: none;
@@ -36,34 +36,6 @@ body {
 
 .nav-link:hover {
     background-color: #4fa7e2;
-}
-
-/* Adjustments for larger screens */
-@media only screen and (min-width: 769px) {
-    .header {
-        padding: 20px;
-    }
-}
-
-/* Adjustments for smaller screens */
-@media only screen and (max-width: 768px) {
-    .header {
-        padding: 10px;
-    }
-
-    .logo img {
-        max-width: 80px;
-    }
-
-    .nav-links {
-        gap: 5px;
-        margin-right: 10px;
-    }
-
-    .nav-link {
-        padding: 5px;
-        font-size: 14px; /* Adjust font size for smaller screens */
-    }
 }
 
 /* First section styling */
@@ -113,7 +85,7 @@ p {
 @media only screen and (max-width: 768px) {
     .info-item {
         margin-right: 0;
-        margin-bottom: 10px; /* Add some space between info items */
+        margin-bottom: 10px;
     }
 
     .info-item i {

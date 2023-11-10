@@ -100,14 +100,10 @@ p {
     border-radius: 5px;
     padding: 10px;
     margin-bottom: 20px;
-}
-
-.small-box, .large-box {
-    width: 100%;
-}
-
-.large-box {
-    height: 200px;
+    width: 80%;
+    max-width: 300px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 input, textarea {
@@ -126,8 +122,6 @@ input, textarea {
     border-radius: 5px;
     cursor: pointer;
     margin-top: 10px;
-    position: absolute;
-    bottom: 0;
 }
 
 .send-button:hover {
